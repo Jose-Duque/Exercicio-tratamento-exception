@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;model.exceptions.DominException.java&apos; to &apos;DomainException.java&apos;&#x0D;&#x0A;- Original project: &apos;ExercicoException&apos;&#x0D;&#x0A;- Original element: &apos;model.exceptions.DominException.java&apos;&#x0D;&#x0A;- Renamed element: &apos;model.exceptions.DomainException.java&apos;" description="Rename compilation unit &apos;DominException.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;model.exceptions{DominException.java" name="DomainException.java" references="false" stamp="1611265413653" version="1.0"/>
+</session>

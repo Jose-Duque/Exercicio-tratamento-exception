@@ -1,0 +1,5 @@
+package model.exceptions;
+
+public class DominException extends RuntimeException {
+	super(msg);
+}
