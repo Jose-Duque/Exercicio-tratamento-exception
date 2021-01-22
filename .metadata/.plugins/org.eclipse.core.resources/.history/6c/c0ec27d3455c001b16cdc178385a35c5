@@ -26,16 +26,17 @@ public class Program {
 			Double withdrawlimit = sc.nextDouble();
 			
 			Account account = new Account(number, holder, balance, withdrawlimit);
+			account.deposit(balance);
 			
 			System.out.print("Enter amount for withdraw: ");
-			Double amount = sc.nextDouble();
+			Double withdraw = sc.nextDouble();
 			
-			account.withdraw(amount);
+			account.withdraw(withdraw);
 			
-			System.out.printf("New balance: %.2f" , account.getBalance());
+			System.out.println("New balance: " + account.getBalance());
 		} 
 		catch(DomainException e) {
-			System.out.println("Withdraw error: "+ e.getMessage());
+			System.out.println(e.getMessage());
 		}
 		sc.close();
 	}

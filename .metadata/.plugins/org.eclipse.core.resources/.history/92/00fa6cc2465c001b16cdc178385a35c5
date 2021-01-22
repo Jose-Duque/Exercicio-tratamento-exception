@@ -43,16 +43,16 @@ public class Account {
 	}
 
 	public void deposit(Double amount) {
-		balance = balance + amount;
+		balance = balance+= amount;
 	}
 	
 	public void withdraw(Double amount) {
-		balance = balance - amount;
+		balance = balance-= amount;
+		if(amount > balance) {
+			throw new DomainException("Not enough balance");
+		}
 		if(amount >= withdrawLimit) {
 			throw new DomainException("The amount exceeds withdraw limit");
-		}
-		if(balance < amount) {
-			throw new DomainException("Not enough balance");
 		}
 	}
 

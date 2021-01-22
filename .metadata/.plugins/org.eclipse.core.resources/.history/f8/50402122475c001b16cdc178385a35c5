@@ -35,7 +35,7 @@ public class Program {
 			System.out.printf("New balance: %.2f" , account.getBalance());
 		} 
 		catch(DomainException e) {
-			System.out.println("Withdraw error: "+ e.getMessage());
+			System.out.println(e.getMessage());
 		}
 		sc.close();
 	}
